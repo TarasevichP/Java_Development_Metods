@@ -11,6 +11,19 @@ public class TaskFirstArray {
         oneArray(sizeArrays);
 
         multiArray(sizeArrays);
+        multiArrayNumberTwo(sizeArrays);
+    }
+
+    private static void multiArrayNumberTwo(int sizeArrays) {
+        int[] arr = new int[sizeArrays];
+
+        for (int i = 0; i < arr.length; i++) {
+            int element = (int) (-10 + Math.random() * 20 + 1);
+            arr[i] = element;
+            System.out.print(arr[i]+" " + "= ");
+
+            System.out.print(element+",");
+        }
 
     }
 
@@ -18,7 +31,7 @@ public class TaskFirstArray {
         int[] arr = new int[sizeArrays];
 
         for (int i = 0; i < arr.length; i++) {
-            int elementsArray = (int) (-10+ Math.random()*20+1);
+            int elementsArray = (int) (-10 + Math.random() * 20 + 1);
             arr[i] = elementsArray;
 
         }
@@ -34,7 +47,7 @@ public class TaskFirstArray {
 
             for (int j = 0; j < arr[i].length; j++) {
 
-                int elementsArray = (int) (-10+Math.random()*20+1);
+                int elementsArray = (int) (-10 + Math.random() * 20 + 1);
                 arr[i][j] = elementsArray;
             }
 
